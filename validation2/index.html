@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="page-content profile" id="profile">
+    <div class="profile-flex">
+
+        <div class="form-container">
+           
+            <div class="line">
+                <div class="title">
+                    <label for="login">Name</label>
+                </div>
+                <div class="data">
+                    <input id="login" type="text" placeholder="Ты кто?" />
+                </div>
+            </div>
+
+            <div class="line">
+                <div class="title">Pass</div>
+                <div class="data">
+                    <input class="password" type="password" placeholder="не 123456" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="title">
+                    Sex
+                </div>
+                <div class="data">
+                    <label>
+                        M
+                        <input type="radio" name="sex" value="m" />
+                    </label>
+
+                    <label>
+                        W<input type="radio" name="sex" value="f" />
+                    </label>
+                </div>
+            </div>
+            <div class="line">
+                <div class="title">
+                    City
+                </div>
+                <div class="data">
+                    <select class="city">
+                        <option value="1">Minsk</option>
+                        <option value="2">Narsultan</option>
+                        <option value="3" selected="selected">Not Minsk</option>
+                    </select>
+                </div>
+            </div>
+            <div class="line">
+                <div class="title">
+                    Bith
+                </div>
+                <div class="data">
+                    <input  type="date" class="birthday"/>
+                </div>
+            </div>
+            <div class="line">
+                <div class="title">
+                    Size
+                </div>
+                <div class="data">
+                    <input type="range" value="3" min="0" max="5" id="sizeInput"
+                        oninput="sizeOutput.value = sizeInput.value" />
+                    <output id="sizeOutput">3</output>
+                </div>
+            </div>
+            <div class="line">
+                <div class="title">
+                    Color
+                </div>
+                <div class="data">
+                    <input class="border-color" type="color" value="#5fec53" />
+                </div>
+            </div>
+            <div class="line">
+                <div class="title"></div>
+                <div class="data">
+                    <input class="showPreview" type="button" value="preview" />
+                </div>
+            </div>
+        </div>
+
+        <div class="preview">
+            Hi my name is <span class="name">***</span>.
+            I'm a <span class="sex">***</span>.
+            I'm leave <span class="city">***</span>.
+            I'm <span class="age">***</span> old
+            <img class="cityImg" />
+        </div>
+
+        <div class="errors"></div>
+    </div>
+</div>
+
+
+
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 
+ <script src="script1.js"></script>
+</body>
+</html>
